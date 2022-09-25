@@ -5,3 +5,11 @@ export const Add_Movie =(newMovie)=>{
     };
 
 }
+
+export const FilterMovie = (FiltredTerm) =>{
+
+        return {
+            type : 'FILTER_MOVIE',
+            payload : FiltredTerm
+        }
+}
