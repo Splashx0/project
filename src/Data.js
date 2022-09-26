@@ -1,28 +1,28 @@
 export const movies = [
-    {  
+    {   id:1,
         title : 'Inception',
-        description :'Inception is a 2010 science fiction action film[4][5][6] written and directed by Christopher Nolan, who also produced the film with Emma Thomas, his wife. The film stars Leonardo DiCaprio as a professional thief who steals information by infiltrating the subconscious of his targets. He is offered a chance to have his criminal history erased as payment for the implantation of another persons idea into a targets subconscious.' ,
+        description :'Inception is a 2010 science fiction action film written and directed by Christopher Nolan.' ,
         posterURL :'/inception.jpg',
         rating :9,
         trailer:'https://www.youtube.com/embed/YoHD9XEInc0'
     },
-    {
+    {   id:2,
         title : 'Spiderman',
-        description :'The fictional character Spider-Man, a comic book superhero created by Stan Lee and Steve Ditko and featured in Marvel Comics publications, has appeared as a main character in numerous theatrical and made-for-television films.' ,
+        description :'The fictional character Spider-Man, a comic book superhero created by Stan Lee and Steve Ditko and featured in Marvel Comics publications.' ,
         posterURL :'/spiderman.jpg',
         rating :8,
         trailer: 'https://www.youtube.com/embed/TYMMOjBUPMM'
     },
-    {
+    {   id:3,
         title : 'Naruto Shippuden',
-        description :'Naruto Shippuden is the second series of Naruto anime that follows the titular hero on his quest to become Hokage. Unlike the first series, Naruto is now older and has new teachers to help him through his adventure.' ,
+        description :'Naruto Shippuden is the second series of Naruto anime that follows the titular hero on his quest to become Hokage.' ,
         posterURL :'/naruto.jpg',
         rating :10,
         trailer:'https://www.youtube.com/embed/KePpQ8kAJnI'
     },
-    {
+    {   id:4,
         title : 'One Piece Red',
-        description :'Uta is a beloved singer, renowned for concealing her own identity when performing. Her voice is described as "otherworldly." Now, for the first time ever, Uta will reveal herself to the world at a live concert.' ,
+        description :'Uta is a beloved singer, renowned for concealing her own identity when performing. Her voice is described as "otherworldly.' ,
         posterURL :'/red.jpg',
         rating :10,
         trailer : 'https://www.youtube.com/embed/89JWRYEIG-s'

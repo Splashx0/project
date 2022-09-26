@@ -14,10 +14,10 @@ export const FilterMovie = (FiltredTerm) =>{
         }
 }
 
-/*export const EditMove =(title)=>{
+export const EditFilm =(EditedMovie)=>{
     
     return {
         type:'EDIT_MOVIE',
-        payload : title
+        payload : EditedMovie
     }
-}*/
+}

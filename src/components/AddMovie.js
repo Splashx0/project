@@ -5,7 +5,7 @@ import { useDispatch } from 'react-redux';
 
 const AddMovie = () => {
 const dispatch = useDispatch()
-const [Add, setAdd] = useState({title: "",description: "",posterURL: "",rating: "",trailer:''});
+const [Add, setAdd] = useState({id:Math.random(),title: "",description: "",posterURL: "",rating: "",trailer:''});
 
 const handleSubmit = (e) => {
     e.preventDefault();

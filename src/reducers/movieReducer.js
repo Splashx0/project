@@ -11,6 +11,12 @@ const movieReducer = (state=movies,action) => {
                 movie.title.toLowerCase().includes(action.payload)
             ))
 
+        case 'EDIT_MOVIE':
+            return (state.map((movie)=>
+                
+                    movie.id === action.payload.id ? action.payload: movie   
+            ))
+            
         default : 
             return state
     }
