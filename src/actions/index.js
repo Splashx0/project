@@ -13,3 +13,11 @@ export const FilterMovie = (FiltredTerm) =>{
             payload : FiltredTerm
         }
 }
+
+/*export const EditMove =(title)=>{
+    
+    return {
+        type:'EDIT_MOVIE',
+        payload : title
+    }
+}*/

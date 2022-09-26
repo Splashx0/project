@@ -10,7 +10,7 @@ const movieReducer = (state=movies,action) => {
             return (state.filter((movie)=>
                 movie.title.toLowerCase().includes(action.payload)
             ))
-             
+
         default : 
             return state
     }
