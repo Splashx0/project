@@ -3,7 +3,6 @@ const initialState= {
     movies :movies,
     search :''
 }
-
 const movieReducer = (state=initialState,action) => {
 
     switch(action.type){

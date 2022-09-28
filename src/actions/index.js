@@ -26,5 +26,4 @@ export const DeleteMovie =(id)=>{
     return {
         type:'DELETE_MOVIE',
         payload : id
-    }
-}
+    }}

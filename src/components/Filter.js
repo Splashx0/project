@@ -13,8 +13,8 @@ const Filter = () => {
 
   return (
     <div>
-        <div class="container d-flex justify-content-center mt-3 gap-3">    
-             <input type="text" class="form-control-sm" placeholder="type a film name"  onChange={handleFilterTitle} />
+        <div className="container d-flex justify-content-center mt-3 gap-3">    
+             <input type="text" className="form-control-sm" placeholder="type a film name"  onChange={handleFilterTitle} />
         </div>
     </div>
   )

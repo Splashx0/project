@@ -29,24 +29,24 @@ const EditMovie = () => {
   }  
   return (
     <div>
-    <div class="container d-flex justify-content-center mt-2 mb-3 gap-3 flex-wrap">
+    <div className="container d-flex justify-content-center mt-2 mb-3 gap-3 flex-wrap">
         {   
             <div>
                 <form onSubmit={handleSubmit}>
-                <div class="card h-80" style={{ width: "18rem" }}>
-                    <img class="card-img-top mb-2" src={state.posterURL} alt="pho" style={{ height: "25rem" }} />
+                <div className="card h-80" style={{ width: "18rem" }}>
+                    <img className="card-img-top mb-2" src={state.posterURL} alt="pho" style={{ height: "25rem" }} />
 
-                    <div class="card-body d-flex flex-column gap-3">
+                    <div className="card-body d-flex flex-column gap-3">
                     <div>
-                     <p class='form-label float-start' onChange={handleChange}>Image Link</p>
-                      <input name='posterURL' class='form-control' type='text' defaultValue={state.posterURL} onChange={handleChange}/>
+                     <p className='form-label float-start' onChange={handleChange}>Image Link</p>
+                      <input name='posterURL' className='form-control' type='text' defaultValue={state.posterURL} onChange={handleChange}/>
                     </div>   
-                      <input name='title' class='form-control' type='text' defaultValue={state.title} onChange={handleChange}/>
-                      <textarea name='description' class='form-control' rows={4} onChange={handleChange} defaultValue={state.description}></textarea>
-                      <textarea name='trailer' class='form-control' rows={2} onChange={handleChange} defaultValue={state.trailer}></textarea>
-                      <div class='d-flex justify-content-center gap-2'>
-                            <input name='rating' class='form-control' type='text' defaultValue={state.rating} onChange={handleChange}/>
-                            <button type='submit' class='btn btn-success' onClick={handleSave} >Save</button>
+                      <input name='title' className='form-control' type='text' defaultValue={state.title} onChange={handleChange}/>
+                      <textarea name='description' className='form-control' rows={4} onChange={handleChange} defaultValue={state.description}></textarea>
+                      <textarea name='trailer' className='form-control' rows={2} onChange={handleChange} defaultValue={state.trailer}></textarea>
+                      <div className='d-flex justify-content-center gap-2'>
+                            <input name='rating' className='form-control' type='text' defaultValue={state.rating} onChange={handleChange}/>
+                            <button type='submit' className='btn btn-success' onClick={handleSave} >Save</button>
                       </div>
                     </div>
                 </div>
