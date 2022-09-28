@@ -6,11 +6,11 @@ export const Add_Movie =(newMovie)=>{
 
 }
 
-export const FilterMovie = (FiltredTerm) =>{
+export const FilterMovie = (title) =>{
 
         return {
             type : 'FILTER_MOVIE',
-            payload : FiltredTerm
+            payload : title
         }
 }
 
@@ -19,5 +19,12 @@ export const EditFilm =(EditedMovie)=>{
     return {
         type:'EDIT_MOVIE',
         payload : EditedMovie
+    }
+}
+export const DeleteMovie =(id)=>{
+    
+    return {
+        type:'DELETE_MOVIE',
+        payload : id
     }
 }
