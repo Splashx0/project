@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+React Crud Movie App , using Redux and React Router
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
