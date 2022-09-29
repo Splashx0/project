@@ -5,6 +5,7 @@ import AddMovie from './components/AddMovie';
 import Filter from './components/Filter';
 import MovieList from './components/MovieList';
 import NavBar from './components/NavBar';
+import Login from './components/Login';
 function App() {
   return (
     <div className="App">
@@ -16,6 +17,9 @@ function App() {
                 <MovieList/></>}>
           </Route>
           <Route path='/:title' element={<EditMovie/>}/>
+          <Route path='/login' element={<Login/>}/>
+
+      
 
       </Routes>
 

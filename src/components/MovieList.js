@@ -4,8 +4,10 @@ import { Link } from "react-router-dom";
 import { DeleteMovie } from '../actions';
 
 const MovieList = () => {
-const movies = useSelector(state=>state.movies)
-const search = useSelector(state=>state.search)
+const movies = useSelector(state=>state.movieReducer.movies)
+const search = useSelector(state=>state.movieReducer.search)
+const isLogged = useSelector(state=>state.isLoggedReducer)
+
 const dispatch = useDispatch()
 
 const handleDelete=(id)=>{
@@ -23,13 +25,17 @@ return (
                 <div className="card-body">
                     <h5 className="card-title">{movie.title}</h5>
                     <p>{movie.description}</p>
-                    <div className='d-flex justify-content-center  gap-2'>
+                    {isLogged ?
+                      <div className='d-flex justify-content-center  gap-2'>
                         <div  className='btn btn-danger'>{movie.rating} </div>
                        <Link to={`/${movie.title}`} state={movie}>
                             <button className="btn btn-primary" >Edit</button>
                        </Link> 
                        <button type="button" className="btn btn-dark" onClick={()=>{handleDelete(movie.id)}}><span className="bi bi-trash"></span></button>
-                      </div>
+                    </div>
+                    :null       
+                }
+
                 </div>
                 </div>
             </div>))}

@@ -1,4 +1,4 @@
-/*import movieReducer from "./movieReducer";
+import movieReducer from "./movieReducer";
 import isLogged from "./isLogged"; 
 import { combineReducers } from "redux";
 
@@ -8,4 +8,4 @@ import { combineReducers } from "redux";
         isLoggedReducer : isLogged
     }
 )
-export default allReducers*/
+export default allReducers

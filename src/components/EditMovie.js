@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { useDispatch } from 'react-redux'
-import { useLocation } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import { EditFilm } from '../actions'
 
 const EditMovie = () => {
@@ -29,6 +29,9 @@ const EditMovie = () => {
   }  
   return (
     <div>
+        <Link to='/' class="page-link" >
+          <button class='float-start btn btn-dark mx-3'>Go Back</button>
+        </Link>
     <div className="container d-flex justify-content-center mt-2 mb-3 gap-3 flex-wrap">
         {   
             <div>

@@ -27,3 +27,9 @@ export const DeleteMovie =(id)=>{
         type:'DELETE_MOVIE',
         payload : id
     }}
+
+export const UserLogin =()=>{
+    
+        return {
+            type:'LOGIN',
+        }}
